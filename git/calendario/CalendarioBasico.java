@@ -17,18 +17,43 @@ public class CalendarioBasico
      */
     public CalendarioBasico()
     {
-      day = 1;
-      month = 1;
-      year = 1;
+        day = 1;
+        month = 1;
+        year = 1;
     }
-    
+
+    /**
+     * Metodo para fijar una fecha
+     */
     public void fijarFecha ( int dia, int mes, int ano)
     {
         day = dia;
         month = mes;
         year = ano - 2000;
     }
-    
+
+    /**
+     * Metodo para avanzar la fecha
+     */
+    public void avanzarFecha()
+    {
+        if (day == 30 & month == 12){
+            day = 1;
+            month = 1;
+            year = year + 1;
+        }
+        else {
+        if (day < 30) {
+            day = day + 1;
+        }
+        else {
+            if (day == 30){
+                day = 1;
+                month = month + 1;
+            }
+        }
+    }
+}
 
     /**
      * Metodo para que devuelva la fecha deseada
