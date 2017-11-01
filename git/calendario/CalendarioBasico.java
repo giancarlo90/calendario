@@ -55,12 +55,11 @@ public class CalendarioBasico
     }
 }
 
-    /**
-     * Metodo para que devuelva la fecha deseada
-     */
+/**
+* Metodo para que devuelva la fecha deseada 
+*/
     public String devolverFecha()
     {
-        // put your code here
-        return day + "-" + month + "-" +  year ;
+        return  day + "-" + month + "-" + year;
     }
 }
