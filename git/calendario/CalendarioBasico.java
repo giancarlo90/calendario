@@ -28,13 +28,14 @@ public class CalendarioBasico
         month = mes;
         year = ano - 2000;
     }
+    
 
     /**
      * Metodo para que devuelva la fecha deseada
-     
+     */
     public String devolverFecha()
     {
         // put your code here
-        return fecha = day + "-" + month + "-" +  year ;
-    }*/
+        return day + "-" + month + "-" +  year ;
+    }
 }
