@@ -43,35 +43,35 @@ public class CalendarioBasico
             year = year + 1;
         }
         else {
-        if (day < 30) {
-            day = day + 1;
-        }
-        else {
-            if (day == 30){
-                day = 1;
-                month = month + 1;
+            if (day < 30) {
+                day = day + 1;
+            }
+            else {
+                if (day == 30){
+                    day = 1;
+                    month = month + 1;
+                }
             }
         }
     }
-}
 
-/**
-* Metodo para que devuelva la fecha deseada 
-*/
-    public String devolverFecha()
+    /**
+     * Metodo para que devuelva la fecha deseada 
+     */
+    public String obtenerFecha()
     {
         String fechaADevolver;
         String parte1 = day + "";
         String parte2 = month + "";
         String parte3 = year + "";
         if (parte1.length() < 2) {
-         parte1 = "0" + parte1;   
+            parte1 = "0" + parte1;   
         }
         if (month < 10) {
-         parte2 = "0" + parte2;    
+            parte2 = "0" + parte2;    
         }
         if (parte3.length() < 2) {
-          parte3 = "0" + parte3;
+            parte3 = "0" + parte3;
         }
         fechaADevolver = parte1 + "-" + parte2 + "-" + parte3;
         return fechaADevolver;
