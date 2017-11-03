@@ -29,7 +29,7 @@ public class CalendarioBasico
     {
         day = dia;
         month = mes;
-        year = ano - 2000;
+        year = ano;
     }
 
     /**
