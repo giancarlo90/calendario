@@ -60,6 +60,20 @@ public class CalendarioBasico
 */
     public String devolverFecha()
     {
-        return  day + "-" + month + "-" + year;
+        String fechaADevolver;
+        String parte1 = day + "";
+        String parte2 = month + "";
+        String parte3 = year + "";
+        if (parte1.length() < 2) {
+         parte1 = "0" + parte1;   
+        }
+        if (month < 10) {
+         parte2 = "0" + parte2;    
+        }
+        if (parte3.length() < 2) {
+          parte3 = "0" + parte3;
+        }
+        fechaADevolver = parte1 + "-" + parte2 + "-" + parte3;
+        return fechaADevolver;
     }
 }
